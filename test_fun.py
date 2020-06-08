@@ -15,4 +15,5 @@ def test_noop(smtp):
     response, msg = smtp.noop()
     assert_that(response, str(response)).is_equal_to(250)
     assert response == 250
+    print(response)
     # assert 0
